@@ -1,0 +1,386 @@
+/* ==========================================================================
+   KIMQUY INVEST — DESIGN TOKENS
+   Nguồn: bảng màu thương hiệu (Royal Gold / Deep Black / Graphite / Ivory)
+   + hệ màu giao diện dark-theme của bộ mockup interface/
+   ========================================================================== */
+
+:root {
+  /* ---------- Thương hiệu ---------- */
+  --kg-gold: #d4af37;
+  --kg-gold-100: #f6e6b4;
+  --kg-gold-200: #ecd489;
+  --kg-gold-300: #e0c060;
+  --kg-gold-400: #d4af37;
+  --kg-gold-500: #b8952c;
+  --kg-gold-600: #94761f;
+  --kg-gold-700: #6d5615;
+  --kg-black: #0b0b0b;
+  --kg-graphite: #2b2b2b;
+  --kg-ivory: #f7f3eb;
+
+  /* ---------- Nền ---------- */
+  --bg-app: #050505;
+  --bg-rail: #0a0a0a;
+  --bg-rail-2: #060606;
+  --bg-main: #060606;
+  --bg-hero: #0a0a0a;
+  --bg-card: #121212;
+  --bg-card-2: #161616;
+  --bg-card-hi: #1a1a1a;
+  --bg-inset: #0d0d0d;
+  --bg-input: #101010;
+  --bg-hover: rgba(255, 255, 255, 0.04);
+  --bg-active: rgba(212, 175, 55, 0.1);
+
+  /* ---------- Viền ---------- */
+  --line: rgba(255, 255, 255, 0.07);
+  --line-strong: rgba(255, 255, 255, 0.12);
+  --line-soft: rgba(255, 255, 255, 0.045);
+  --line-gold: rgba(212, 175, 55, 0.28);
+  --line-gold-strong: rgba(212, 175, 55, 0.5);
+
+  /* ---------- Chữ ---------- */
+  --tx-hi: #f7f3eb;
+  --tx: #ddd8cd;
+  --tx-mid: #a9a397;
+  --tx-dim: #7d786d;
+  --tx-faint: #5c584f;
+  --tx-gold: #e0c060;
+
+  /* ---------- Ngữ nghĩa thị trường ---------- */
+  --up: #22c576;
+  --up-200: #7ee2b0;
+  --up-soft: rgba(34, 197, 118, 0.14);
+  --up-line: rgba(34, 197, 118, 0.55);
+  --up-glow: rgba(34, 197, 118, 0.28);
+
+  --down: #e5484d;
+  --down-200: #f09a9d;
+  --down-soft: rgba(229, 72, 77, 0.14);
+  --down-line: rgba(229, 72, 77, 0.55);
+  --down-glow: rgba(229, 72, 77, 0.26);
+
+  --ref: #e8b44a;
+  --ref-soft: rgba(232, 180, 74, 0.14);
+
+  --flat: #8b8b8b;
+  --flat-soft: rgba(139, 139, 139, 0.14);
+
+  /* ---------- Điểm nhấn dữ liệu ---------- */
+  --acc-blue: #5b8def;
+  --acc-blue-soft: rgba(91, 141, 239, 0.14);
+  --acc-teal: #2dd4bf;
+  --acc-teal-soft: rgba(45, 212, 191, 0.14);
+  --acc-violet: #8b7cf6;
+  --acc-violet-soft: rgba(139, 124, 246, 0.14);
+  --acc-orange: #f59e6b;
+  --acc-orange-soft: rgba(245, 158, 107, 0.14);
+  --acc-rose: #ec6a8a;
+  --acc-rose-soft: rgba(236, 106, 138, 0.14);
+  --acc-sky: #56b6e8;
+  --acc-sky-soft: rgba(86, 182, 232, 0.14);
+  --acc-lime: #a3c94a;
+  --acc-lime-soft: rgba(163, 201, 74, 0.14);
+
+  /* ---------- Chuỗi màu biểu đồ ---------- */
+  --c1: #2ec27b;
+  --c2: #d4af37;
+  --c3: #5b8def;
+  --c4: #8b7cf6;
+  --c5: #2dd4bf;
+  --c6: #f59e6b;
+  --c7: #ec6a8a;
+  --c8: #56b6e8;
+  --c9: #a3c94a;
+  --c10: #cf9f5a;
+  --c11: #7f8fa6;
+  --c12: #6b7280;
+
+  /* ---------- Chữ ---------- */
+  --font-display: 'Cinzel', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+
+  /* ---------- Bán kính ---------- */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 9px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-pill: 999px;
+
+  /* ---------- Đổ bóng ---------- */
+  --sh-card: 0 1px 0 rgba(255, 255, 255, 0.025) inset, 0 10px 30px -12px rgba(0, 0, 0, 0.9);
+  --sh-pop: 0 18px 50px -12px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  --sh-gold: 0 6px 22px -8px rgba(212, 175, 55, 0.45);
+  --sh-inset: 0 1px 2px rgba(0, 0, 0, 0.6) inset;
+
+  /* ---------- Chuyển động ---------- */
+  --ease: cubic-bezier(0.32, 0.72, 0.28, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-1: 120ms;
+  --dur-2: 200ms;
+  --dur-3: 340ms;
+
+  /* ---------- Kích thước khung ---------- */
+  --rail-w: 228px;
+  --rail-w-collapsed: 76px;
+  --topbar-h: 66px;
+  --hero-h: 178px;
+  --ticker-h: 40px;
+
+  /* ---------- Chuyển sắc ---------- */
+  --grad-gold: linear-gradient(135deg, #f6e6b4 0%, #d4af37 42%, #a8862a 100%);
+  --grad-gold-btn: linear-gradient(180deg, #e6c869 0%, #d4af37 55%, #bb9529 100%);
+  --grad-card: linear-gradient(158deg, #161616 0%, #111 62%, #0e0e0e 100%);
+  --grad-card-gold: linear-gradient(158deg, rgba(212, 175, 55, 0.09) 0%, rgba(212, 175, 55, 0.02) 46%, transparent 100%);
+  --grad-scrim: linear-gradient(90deg, rgba(6, 6, 6, 0.97) 0%, rgba(6, 6, 6, 0.82) 38%, rgba(6, 6, 6, 0.24) 68%, rgba(6, 6, 6, 0.62) 100%);
+}
+
+/* ==========================================================================
+   RESET
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg-app);
+  color: var(--tx);
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  line-height: 1.24;
+  color: var(--tx-hi);
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: 31px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 13.5px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+svg {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 2px solid var(--kg-gold);
+  outline-offset: 2px;
+  border-radius: var(--r-xs);
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: #fff;
+}
+
+/* ---------- Thanh cuộn ---------- */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2a2a2a transparent;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #242424;
+  border-radius: var(--r-pill);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ==========================================================================
+   TIỆN ÍCH
+   ========================================================================== */
+
+.num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1;
+}
+
+.up {
+  color: var(--up);
+}
+
+.down {
+  color: var(--down);
+}
+
+.flat {
+  color: var(--flat);
+}
+
+.gold {
+  color: var(--tx-gold);
+}
+
+.gold-text {
+  background: var(--grad-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.muted {
+  color: var(--tx-mid);
+}
+
+.dim {
+  color: var(--tx-dim);
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gap-4 { gap: 4px; }
+.gap-6 { gap: 6px; }
+.gap-8 { gap: 8px; }
+.gap-10 { gap: 10px; }
+.gap-12 { gap: 12px; }
+
+.grow { flex: 1 1 auto; min-width: 0; }
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
